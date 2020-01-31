@@ -128,7 +128,7 @@ class HOW:
         
         print("Graphing Data")
         for point in self.tqdm(range(points)):
-            x.append( (point * .01) + start )
+            x.append( (point * resolution) + start )
             
             #For graphing purposes convert Hartrees to Wavenumbers
             for index, basis in enumerate(self.basis): 
